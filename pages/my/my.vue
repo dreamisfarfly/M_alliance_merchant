@@ -72,22 +72,69 @@
         <!-- start commission -->
       </view>
       <!-- end user-detailed -->
+      <Menu v-for="(item,key) in menuList" :key="key" :menu="item"></Menu>
     </view>
   </view>
   <!-- end 我的 -->
 </template>
 
 <script>
+import Menu from "@/components/menu/menu.vue";
 export default {
-  data() {
-    return {
-      scheduleCount: 20, //进度 %
-    };
-  },
-  mounted() {
-    var a = document.getElementsByClassName("uni-page-head-hd")[0];
-    a.style.opacity = 0;
-  },
+    data() {
+        return {
+            //进度 %
+            scheduleCount: 20,
+            // 菜单列表
+            menuList:[
+                {
+                    icon: '/static/images/commission-subsidiary-icon.png',
+                    name: '佣金明细',
+                    path: ''
+                },
+                {
+                    icon: '/static/images/coupon-management-icon.png',
+                    name: '优惠券管理',
+                    path: ''
+                },
+                {
+                    icon: '/static/images/rights-management-icon.png',
+                    name: '权益管理',
+                    path: ''
+                },
+                {
+                    icon: '/static/images/clerk-management-icon.png',
+                    name: '店员管理',
+                    path: ''
+                },
+                {
+                    icon: '/static/images/message-management-icon.png',
+                    name: '消息管理',
+                    path: ''
+                },
+                {
+                    icon: '/static/images/see-evaluation-icon.png',
+                    name: '查看评价',
+                    path: ''
+                },
+                {
+                    icon: '/static/images/referral-code-icon.png',
+                    name: '推荐码',
+                    path: ''
+                },
+                {
+                    icon: '/static/images/cancel- verification-records-icon.png',
+                    name: '核销记录',
+                    path: ''
+                }
+            ]
+        };
+    },
+    mounted() {
+        var a = document.getElementsByClassName("uni-page-head-hd")[0];
+        a.style.opacity = 0;
+    },
+    components: { Menu }
 };
 </script>
 
@@ -109,7 +156,7 @@ export default {
       .user-buddha {
         width: 136rpx;
         height: 136rpx;
-        border-radius: 50%;
+        border-radius: 50% 50%;
       }
       .info {
         margin-left: 22rpx;
