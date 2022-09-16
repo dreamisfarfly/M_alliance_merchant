@@ -18,6 +18,6 @@ export default {
 @import "/static/font/font.css";
 
 page {
-  background: #f9f9f9;
+  background: #f3f3f3;
 }
 </style>
