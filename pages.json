@@ -46,6 +46,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/withdraw",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {

@@ -66,7 +66,7 @@
           </view>
           <view class="commission-operation">
             <view class="withdrawal-record" @click="jump('/pages/my/withdrawalRecord')">提现记录</view>
-            <view class="to-withdrawal" @click="jump('')">去提现</view>
+            <view class="to-withdrawal" @click="jump('/pages/my/withdraw')">去提现</view>
           </view>
         </view>
         <!-- start commission -->
