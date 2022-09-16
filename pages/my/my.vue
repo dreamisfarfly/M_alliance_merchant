@@ -90,7 +90,7 @@ export default {
                 {
                     icon: '/static/images/commission-subsidiary-icon.png',
                     name: '佣金明细',
-                    path: ''
+                    path: '/pages/my/commissionSubsidiary'
                 },
                 {
                     icon: '/static/images/coupon-management-icon.png',

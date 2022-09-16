@@ -1,26 +1,34 @@
 <template>
   <!-- start 菜单 -->
-  <view class="menu">
+  <view class="menu" @click="jump(menu.path)">
     <view class="menu-info">
       <img class="menu-info-icon" :src="menu.icon" />
-      <text class="menu-info-name">{{menu.name}}</text>
+      <text class="menu-info-name">{{ menu.name }}</text>
     </view>
-    <img class="menu-operation" src="/static/images/right-icon.png"/>
+    <img class="menu-operation" src="/static/images/right-icon.png" />
   </view>
   <!-- end 菜单 -->
 </template>
 
 <script>
 export default {
-    props: {
-        // 菜单
-        menu: {
-            typeof: Object,
-            default: function(){
-                return {};
-            }
-        }
-    }
+  props: {
+    // 菜单
+    menu: {
+      typeof: Object,
+      default: function () {
+        return {};
+      },
+    },
+  },
+  methods: {
+    // 跳转
+    jump(path) {
+      uni.navigateTo({
+        url: path,
+      });
+    },
+  },
 };
 </script>
 
@@ -49,7 +57,7 @@ export default {
       color: #333333;
     }
   }
-  .menu-operation{
+  .menu-operation {
     width: 10rpx;
     height: 18rpx;
   }

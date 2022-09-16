@@ -57,6 +57,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/commissionSubsidiary",
+			"style": {
+				"navigationBarTitleText": "佣金明细",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
