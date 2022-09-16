@@ -68,12 +68,23 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/couponManagement",
+			"style": {
+				"navigationBarTitleText": "优惠券管理",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#F8F8F8"
 	}
 }

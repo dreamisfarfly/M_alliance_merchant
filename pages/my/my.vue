@@ -95,7 +95,7 @@ export default {
                 {
                     icon: '/static/images/coupon-management-icon.png',
                     name: '优惠券管理',
-                    path: ''
+                    path: '/pages/my/couponManagement'
                 },
                 {
                     icon: '/static/images/rights-management-icon.png',
