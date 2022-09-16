@@ -35,6 +35,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/withdrawalRecord",
+			"style": {
+				"navigationBarTitleText": "提现记录",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {

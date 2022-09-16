@@ -65,8 +65,8 @@
             <view class="commission-info-name">我的佣金</view>
           </view>
           <view class="commission-operation">
-            <view class="withdrawal-record">提现记录</view>
-            <view class="to-withdrawal">去提现</view>
+            <view class="withdrawal-record" @click="jump('/pages/my/withdrawalRecord')">提现记录</view>
+            <view class="to-withdrawal" @click="jump('')">去提现</view>
           </view>
         </view>
         <!-- start commission -->
@@ -133,6 +133,14 @@ export default {
     mounted() {
         var a = document.getElementsByClassName("uni-page-head-hd")[0];
         a.style.opacity = 0;
+    },
+    methods: {
+        // 跳转
+        jump(path) {
+            uni.navigateTo({
+            	url: path
+            })
+        }
     },
     components: { Menu }
 };
