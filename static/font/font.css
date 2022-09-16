@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Alimama ShuHeiTi';
+    src: url('/static/font/AlimamaShuHeiTi.woff2') format('woff2'),
+        url('/static/font/AlimamaShuHeiTi.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
