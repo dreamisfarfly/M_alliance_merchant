@@ -47,7 +47,7 @@
             </view>
             <!-- end rememb -->
             <!-- start register -->
-            <view class="register">注册 ></view>
+            <view class="register" @click="registerFun">注册 ></view>
             <!-- end register -->
           </view>
           <!-- end form-operation -->
@@ -75,7 +75,14 @@
         isRememb: false, // 记住密码
       };
     },
-    methods: {},
+    methods: {
+        // 注册
+        registerFun(){
+            uni.navigateTo({
+            	url: '/pages/register'
+            })
+        }
+    },
   };
   </script>
   
