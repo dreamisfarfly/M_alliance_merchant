@@ -120,7 +120,7 @@ export default {
                 {
                     icon: '/static/images/referral-code-icon.png',
                     name: '推荐码',
-                    path: ''
+                    path: '/pages/my/referralCode'
                 },
                 {
                     icon: '/static/images/cancel-verification-records-icon.png',
