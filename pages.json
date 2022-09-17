@@ -90,6 +90,14 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/memberManagement",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
 		}
 	],
 	"globalStyle": {
