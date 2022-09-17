@@ -125,7 +125,7 @@ export default {
                 {
                     icon: '/static/images/cancel-verification-records-icon.png',
                     name: '核销记录',
-                    path: ''
+                    path: '/pages/my/verificationRecord'
                 }
             ]
         };

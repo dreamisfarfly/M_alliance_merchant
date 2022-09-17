@@ -25,7 +25,7 @@
         <view class="coupon-management-type-card">
           <img
             v-if="item.type == 0"
-            class="coupon-management-type-icon"
+            class="coupon-management-type-icons"
             src="/static/images/discount-coupon-magcard.png"
           />
           <img
