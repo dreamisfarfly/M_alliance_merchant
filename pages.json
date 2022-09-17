@@ -98,6 +98,14 @@
 				"enablePullDownRefresh": false,
 				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path": "pages/my/messageManagement",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
 		}
 	],
 	"globalStyle": {

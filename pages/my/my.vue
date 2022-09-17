@@ -110,7 +110,7 @@ export default {
                 {
                     icon: '/static/images/message-management-icon.png',
                     name: '消息管理',
-                    path: ''
+                    path: '/pages/my/messageManagement'
                 },
                 {
                     icon: '/static/images/see-evaluation-icon.png',
