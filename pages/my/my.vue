@@ -100,7 +100,7 @@ export default {
                 {
                     icon: '/static/images/rights-management-icon.png',
                     name: '权益管理',
-                    path: ''
+                    path: '/pages/my/rightsManagement'
                 },
                 {
                     icon: '/static/images/clerk-management-icon.png',
