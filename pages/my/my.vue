@@ -123,7 +123,7 @@ export default {
                     path: ''
                 },
                 {
-                    icon: '/static/images/cancel- verification-records-icon.png',
+                    icon: '/static/images/cancel-verification-records-icon.png',
                     name: '核销记录',
                     path: ''
                 }
