@@ -106,6 +106,17 @@
 				"enablePullDownRefresh": false,
 				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path": "pages/my/seeEvaluation",
+			"style": {
+				"navigationBarTitleText": "查看评价",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {

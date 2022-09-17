@@ -115,7 +115,7 @@ export default {
                 {
                     icon: '/static/images/see-evaluation-icon.png',
                     name: '查看评价',
-                    path: ''
+                    path: '/pages/my/seeEvaluation'
                 },
                 {
                     icon: '/static/images/referral-code-icon.png',
