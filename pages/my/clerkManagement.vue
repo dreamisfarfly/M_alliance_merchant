@@ -97,7 +97,7 @@ export default {
         },
         {
           name: "李丽丽",
-          type: 0,
+          type: 1,
           phone: "15688889999",
           status: 1,
         },
