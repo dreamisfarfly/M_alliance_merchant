@@ -105,7 +105,7 @@ export default {
                 {
                     icon: '/static/images/clerk-management-icon.png',
                     name: '店员管理',
-                    path: ''
+                    path: '/pages/my/clerkManagement'
                 },
                 {
                     icon: '/static/images/message-management-icon.png',

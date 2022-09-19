@@ -139,6 +139,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/clerkManagement",
+			"style": {
+				"navigationBarTitleText": "店员管理",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {

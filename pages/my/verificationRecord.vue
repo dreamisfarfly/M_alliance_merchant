@@ -37,7 +37,7 @@
 
 <script>
 import UseCouponsRecordCard from "@/components/useCouponsRecordCard/useCouponsRecordCard.vue";
-import ExpenseCalendarCard from "../../components/expenseCalendarCard/expenseCalendarCard.vue";
+import ExpenseCalendarCard from "@/components/expenseCalendarCard/expenseCalendarCard.vue";
 export default {
   data() {
     return {
