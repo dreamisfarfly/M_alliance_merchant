@@ -11,7 +11,9 @@
       :title-bold="true"
     >
       <template slot="right">
-        <text class="release-message">发布消息</text>
+        <text class="release-message" @click="jump('/pages/my/addMessage')"
+          >发布消息</text
+        >
       </template>
     </u-navbar>
     <!-- end 导航栏 -->
