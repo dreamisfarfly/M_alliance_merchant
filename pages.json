@@ -183,6 +183,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/addMessage",
+			"style": {
+				"navigationBarTitleText": "添加消息",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {

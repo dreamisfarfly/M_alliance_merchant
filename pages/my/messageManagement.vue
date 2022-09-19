@@ -11,7 +11,9 @@
       :title-bold="true"
     >
       <template slot="right">
-        <text class="add-message">添加</text>
+        <text class="add-message" @click="jump('/pages/my/addMessage')"
+          >添加</text
+        >
       </template>
     </u-navbar>
     <!-- end 导航栏 -->
@@ -44,6 +46,14 @@ export default {
         backgroundColor: "#FFFFFF",
       },
     };
+  },
+  methods: {
+    // 跳转
+    jump(path) {
+      uni.navigateTo({
+        url: path,
+      });
+    },
   },
 };
 </script>

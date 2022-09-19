@@ -122,7 +122,7 @@
 </template>
 
 <script>
-import UploadImgGroup from "../../components/uploadImgGroup/uploadImgGroup.vue";
+import UploadImgGroup from "@/components/uploadImgGroup/uploadImgGroup.vue";
 export default {
   data() {
     return {
