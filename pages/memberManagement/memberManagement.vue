@@ -56,7 +56,11 @@
     </view>
     <!-- end member-management -->
     <!-- start add-vip -->
-    <img class="add-vip" src="/static/images/add-vip.png"/>
+    <img
+      class="add-vip"
+      src="/static/images/add-vip.png"
+      @click="jump('/pages/memberManagement/addMember')"
+    />
     <!-- end add-vip -->
   </view>
   <!-- end 会员管理 -->
@@ -80,6 +84,12 @@ export default {
     // 搜索
     searchFun() {
       console.log(this.searchValue);
+    },
+    // 跳转
+    jump(path) {
+      uni.navigateTo({
+        url: path,
+      });
     },
   },
 };
@@ -177,11 +187,11 @@ export default {
   }
 }
 
-.add-vip{
-    position: fixed;
-    bottom: 188rpx;
-    right: 40rpx;
-    width: 100rpx;
-    height: 100rpx;
+.add-vip {
+  position: fixed;
+  bottom: 188rpx;
+  right: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
 </style>
