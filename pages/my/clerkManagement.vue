@@ -16,7 +16,7 @@
               >店员佣金比：<text class="commission-data">30%</text></view
             >
           </view>
-          <view class="commission-amend">修改 ></view>
+          <view class="commission-amend" @click="jump('/pages/my/memberRecommendationCommission')">修改 ></view>
         </view>
       </view>
     </view>
@@ -115,6 +115,12 @@ export default {
         ? (this.employeeList[key].status = 0)
         : (this.employeeList[key].status = 1);
     },
+    // 跳转
+    jump(path) {
+      uni.navigateTo({
+      	url: path
+      })
+    }
   },
 };
 </script>

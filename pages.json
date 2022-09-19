@@ -150,6 +150,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/memberRecommendationCommission",
+			"style": {
+				"navigationBarTitleText": "会员推荐佣金",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
