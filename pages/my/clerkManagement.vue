@@ -54,7 +54,7 @@
                     <img
                       v-if="item.type == 1"
                       class="employee-identity-icon"
-                      src="/static/images/shopkeeper-icon.png"
+                      src="/static/images/shop-assistant-icon.png"
                     />
                   </view>
                   <view class="employee-info-phone">{{ item.phone }}</view>
