@@ -4,9 +4,11 @@
 	},
 	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/memberManagement/memberManagement",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -28,7 +30,7 @@
 		{
 			"path": "pages/my/my",
 			"style": {
-				"navigationBarTitleText": "我的",	
+				"navigationBarTitleText": "我的",
 				"app-plus": {
 					"titleNView": {
 						"autoBackButton": false
@@ -89,14 +91,6 @@
 						"autoBackButton": false
 					}
 				}
-			}
-		},
-		{
-			"path": "pages/my/memberManagement",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -201,5 +195,25 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#C78125",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/memberManagement/memberManagement",
+				"text": "会员管理",
+				"iconPath": "static/images/not-member-management-icon.png",
+				"selectedIconPath": "static/images/select-member-management-icon.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/images/not-my.png",
+				"selectedIconPath": "static/images/select-my-icon.png"
+			}
+		]
 	}
 }
