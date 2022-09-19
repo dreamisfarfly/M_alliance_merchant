@@ -29,7 +29,9 @@
       <view class="data-info">
         <view class="data-info-operation">
           <text class="complete-information">资料完善度 50%</text>
-          <text class="to-perfect">去完善>></text>
+          <text class="to-perfect" @click="jump('/pages/my/perfectInformation')"
+            >去完善>></text
+          >
         </view>
         <view class="progress-bar-vessel">
           <view class="progress-bar">
@@ -65,14 +67,20 @@
             <view class="commission-info-name">我的佣金</view>
           </view>
           <view class="commission-operation">
-            <view class="withdrawal-record" @click="jump('/pages/my/withdrawalRecord')">提现记录</view>
-            <view class="to-withdrawal" @click="jump('/pages/my/withdraw')">去提现</view>
+            <view
+              class="withdrawal-record"
+              @click="jump('/pages/my/withdrawalRecord')"
+              >提现记录</view
+            >
+            <view class="to-withdrawal" @click="jump('/pages/my/withdraw')"
+              >去提现</view
+            >
           </view>
         </view>
         <!-- start commission -->
       </view>
       <!-- end user-detailed -->
-      <Menu v-for="(item,key) in menuList" :key="key" :menu="item"></Menu>
+      <Menu v-for="(item, key) in menuList" :key="key" :menu="item"></Menu>
     </view>
   </view>
   <!-- end 我的 -->
@@ -81,68 +89,68 @@
 <script>
 import Menu from "@/components/menu/menu.vue";
 export default {
-    data() {
-        return {
-            //进度 %
-            scheduleCount: 20,
-            // 菜单列表
-            menuList:[
-                {
-                    icon: '/static/images/commission-subsidiary-icon.png',
-                    name: '佣金明细',
-                    path: '/pages/my/commissionSubsidiary'
-                },
-                {
-                    icon: '/static/images/coupon-management-icon.png',
-                    name: '优惠券管理',
-                    path: '/pages/my/couponManagement'
-                },
-                {
-                    icon: '/static/images/rights-management-icon.png',
-                    name: '权益管理',
-                    path: '/pages/my/rightsManagement'
-                },
-                {
-                    icon: '/static/images/clerk-management-icon.png',
-                    name: '店员管理',
-                    path: '/pages/my/clerkManagement'
-                },
-                {
-                    icon: '/static/images/message-management-icon.png',
-                    name: '消息管理',
-                    path: '/pages/my/messageManagement'
-                },
-                {
-                    icon: '/static/images/see-evaluation-icon.png',
-                    name: '查看评价',
-                    path: '/pages/my/seeEvaluation'
-                },
-                {
-                    icon: '/static/images/referral-code-icon.png',
-                    name: '推荐码',
-                    path: '/pages/my/referralCode'
-                },
-                {
-                    icon: '/static/images/cancel-verification-records-icon.png',
-                    name: '核销记录',
-                    path: '/pages/my/verificationRecord'
-                }
-            ]
-        };
+  data() {
+    return {
+      //进度 %
+      scheduleCount: 20,
+      // 菜单列表
+      menuList: [
+        {
+          icon: "/static/images/commission-subsidiary-icon.png",
+          name: "佣金明细",
+          path: "/pages/my/commissionSubsidiary",
+        },
+        {
+          icon: "/static/images/coupon-management-icon.png",
+          name: "优惠券管理",
+          path: "/pages/my/couponManagement",
+        },
+        {
+          icon: "/static/images/rights-management-icon.png",
+          name: "权益管理",
+          path: "/pages/my/rightsManagement",
+        },
+        {
+          icon: "/static/images/clerk-management-icon.png",
+          name: "店员管理",
+          path: "/pages/my/clerkManagement",
+        },
+        {
+          icon: "/static/images/message-management-icon.png",
+          name: "消息管理",
+          path: "/pages/my/messageManagement",
+        },
+        {
+          icon: "/static/images/see-evaluation-icon.png",
+          name: "查看评价",
+          path: "/pages/my/seeEvaluation",
+        },
+        {
+          icon: "/static/images/referral-code-icon.png",
+          name: "推荐码",
+          path: "/pages/my/referralCode",
+        },
+        {
+          icon: "/static/images/cancel-verification-records-icon.png",
+          name: "核销记录",
+          path: "/pages/my/verificationRecord",
+        },
+      ],
+    };
+  },
+  mounted() {
+    var a = document.getElementsByClassName("uni-page-head-hd")[0];
+    a.style.opacity = 0;
+  },
+  methods: {
+    // 跳转
+    jump(path) {
+      uni.navigateTo({
+        url: path,
+      });
     },
-    mounted() {
-        var a = document.getElementsByClassName("uni-page-head-hd")[0];
-        a.style.opacity = 0;
-    },
-    methods: {
-        // 跳转
-        jump(path) {
-            uni.navigateTo({
-            	url: path
-            })
-        }
-    },
-    components: { Menu }
+  },
+  components: { Menu },
 };
 </script>
 

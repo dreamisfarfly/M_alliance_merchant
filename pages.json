@@ -172,6 +172,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/perfectInformation",
+			"style": {
+				"navigationBarTitleText": "信息完善",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
