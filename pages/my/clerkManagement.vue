@@ -74,7 +74,7 @@
               />
             </view>
           </view>
-          <view class="add-btn">添加</view>
+          <view class="add-btn" @click="jump('/pages/my/addClerk')">添加</view>
         </view>
       </view>
     </view>

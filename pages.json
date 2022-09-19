@@ -161,6 +161,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/addClerk",
+			"style": {
+				"navigationBarTitleText": "添加店员",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
