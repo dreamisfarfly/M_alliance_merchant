@@ -42,7 +42,7 @@
               :key="key"
             >
               <view class="employee-list-info">
-                <img src="#" class="employee-list-info-compile" />
+                <img src="/static/images/compile-icon.png" class="employee-list-info-compile" />
                 <view class="employee-info">
                   <view class="employee-info-name">
                     {{ item.name }}
@@ -191,6 +191,7 @@ export default {
             justify-content: space-between;
             .employee-list-info {
               display: flex;
+              align-items: center;
               .employee-list-info-compile {
                 width: 30rpx;
                 height: 30rpx;
