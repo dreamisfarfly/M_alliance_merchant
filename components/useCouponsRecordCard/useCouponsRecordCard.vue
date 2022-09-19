@@ -34,7 +34,7 @@
       <view class="card-phone">1568888999</view>
       <view class="market">
         <view class="market-name">核销人：张三备份</view>
-        <view class="market-at">2022-8-2916:32:24</view>
+        <view class="market-at">2022-8-29 16:32:24</view>
       </view>
     </view>
     <!-- end use-coupons-record-card-info -->
