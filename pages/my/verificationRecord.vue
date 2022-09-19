@@ -19,14 +19,16 @@
     <!-- start 切换栏 -->
     <!-- start verification-record -->
     <view class="verification-record">
-        <!-- start 用券记录 -->
-        <template v-if="swiperCurrent==0">
-          <UseCouponsRecordCard :coupons="{type:0}"></UseCouponsRecordCard>
-        </template>
-        <!-- end 用券记录 -->
-        <!-- start 消费记录 -->
-        <template v-if="swiperCurrent==1"></template>
-        <!-- end 消费记录 -->
+      <!-- start 用券记录 -->
+      <template v-if="swiperCurrent == 0">
+        <UseCouponsRecordCard :coupons="{ type: 0 }"></UseCouponsRecordCard>
+      </template>
+      <!-- end 用券记录 -->
+      <!-- start 消费记录 -->
+      <template v-if="swiperCurrent == 1">
+        <ExpenseCalendarCard :coupons="{ type: 0 }"></ExpenseCalendarCard>
+      </template>
+      <!-- end 消费记录 -->
     </view>
     <!-- end verification-record -->
   </view>
@@ -34,38 +36,39 @@
 </template>
 
 <script>
-import UseCouponsRecordCard from '@/components/useCouponsRecordCard/useCouponsRecordCard.vue';
+import UseCouponsRecordCard from "@/components/useCouponsRecordCard/useCouponsRecordCard.vue";
+import ExpenseCalendarCard from "../../components/expenseCalendarCard/expenseCalendarCard.vue";
 export default {
-    data() {
-        return {
-            //  swiper组件的current值
-            swiperCurrent: 0,
-            // tab栏滑块样式
-            tableBarStyle: {
-                background: "linear-gradient(270deg, #D99A48 0%, #F5C684 100%)",
-            },
-            // 选项卡标题
-            tabMenu: [
-                {
-                    name: "用券记录",
-                },
-                {
-                    name: "消费记录",
-                },
-            ],
-        };
-    },
-    mounted() {
-        var a = document.getElementsByClassName("uni-page-head-hd")[0];
-        a.style.opacity = 0;
-    },
-    methods: {
-        // tabs通知swiper切换
-        tabsChange(index) {
-            this.swiperCurrent = index;
+  data() {
+    return {
+      //  swiper组件的current值
+      swiperCurrent: 0,
+      // tab栏滑块样式
+      tableBarStyle: {
+        background: "linear-gradient(270deg, #D99A48 0%, #F5C684 100%)",
+      },
+      // 选项卡标题
+      tabMenu: [
+        {
+          name: "用券记录",
         },
+        {
+          name: "消费记录",
+        },
+      ],
+    };
+  },
+  mounted() {
+    var a = document.getElementsByClassName("uni-page-head-hd")[0];
+    a.style.opacity = 0;
+  },
+  methods: {
+    // tabs通知swiper切换
+    tabsChange(index) {
+      this.swiperCurrent = index;
     },
-    components: { UseCouponsRecordCard }
+  },
+  components: { UseCouponsRecordCard, ExpenseCalendarCard },
 };
 </script>
 
