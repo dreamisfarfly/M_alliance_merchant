@@ -188,6 +188,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/memberManagement/addMember",
+			"style": {
+				"navigationBarTitleText": "添加会员",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
