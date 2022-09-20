@@ -55,7 +55,12 @@
         <!-- start evaluate-content-comment -->
         <view class="evaluate-content-comment">
           <!-- start comment-list -->
-          <view class="comment-list" v-for="(item, key) in 9" :key="key">
+          <view
+            class="comment-list"
+            v-for="(item, key) in 9"
+            :key="key"
+            @click="seeEvaluation"
+          >
             <view class="comment-list-header">
               <img class="user-buddha" src="" />
               <view class="comment-info">
@@ -151,6 +156,14 @@ export default {
   mounted() {
     var a = document.getElementsByClassName("uni-page-head-hd")[0];
     a.style.opacity = 0;
+  },
+  methods: {
+    // 查看评价
+    seeEvaluation() {
+      uni.navigateTo({
+        url: "/pages/my/responseEvaluation",
+      });
+    },
   },
 };
 </script>

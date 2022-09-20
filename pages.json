@@ -218,6 +218,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/responseEvaluation",
+			"style": {
+				"navigationBarTitleText": "回复评价",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
