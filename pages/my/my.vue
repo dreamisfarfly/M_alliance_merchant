@@ -51,11 +51,15 @@
         <!-- start member-info -->
         <view class="member-info">
           <view class="member-info-list">
-            <view class="member-info-list-count">12个</view>
+            <view class="member-info-list-count"
+              >12<text class="unit">个</text></view
+            >
             <view class="member-info-list-vip-name">门店会员</view>
           </view>
           <view class="member-info-list">
-            <view class="member-info-list-count">130个</view>
+            <view class="member-info-list-count"
+              >130<text class="unit">个</text></view
+            >
             <view class="member-info-list-vip-name">直属会员</view>
           </view>
         </view>
@@ -273,6 +277,9 @@ export default {
           font-size: 40rpx;
           font-weight: 600;
           color: #333333;
+          .unit {
+            font-size: 24rpx;
+          }
         }
         .member-info-list-vip-name {
           margin-top: 10rpx;
