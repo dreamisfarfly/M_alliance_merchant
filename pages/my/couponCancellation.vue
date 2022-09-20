@@ -10,6 +10,7 @@
         title-color="#FFFFFF"
         title-size="36"
         :border-bottom="false"
+        :background="background"
       ></u-navbar>
       <!-- end 导航栏 -->
       <!-- start coupon-cancellation-header-content -->
@@ -63,7 +64,13 @@
 import CouponCancellationCard from "@/components/couponCancellationCard/couponCancellationCard.vue";
 export default {
   data() {
-    return {};
+    return {
+      // 导航背景
+      background: {
+        // 渐变色
+        backgroundImage: " linear-gradient(270deg, #C9A88B 0%, #996F52 100%)",
+      }
+    };
   },
   components: { CouponCancellationCard },
 };
