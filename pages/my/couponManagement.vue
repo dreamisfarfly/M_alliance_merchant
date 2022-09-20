@@ -29,6 +29,7 @@
       </template>
       <template v-if="swiperCurrent == 1">
         <CouponCard
+          @addCoupon="addCoupon"
           scene="listAdd"
           :coupon="item"
           v-for="(item, key) in couponList"
@@ -83,6 +84,13 @@ export default {
     tabsChange(index) {
       this.swiperCurrent = index;
     },
+    // 添加优惠劵
+    addCoupon(){
+      console.log(111)
+      uni.navigateTo({
+      	url: '/pages/my/addCoupon'
+      })
+    }
   },
   mounted() {
     var a = document.getElementsByClassName("uni-page-head-hd")[0];

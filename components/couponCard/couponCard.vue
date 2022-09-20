@@ -26,7 +26,7 @@
       <view class="coupon-info-card-header">
         <view class="coupon-info-card-header-name">{{ coupon.title }}</view>
         <view class="addition-btn" v-if="scene == 'listShow'">下架</view>
-        <view class="addition-btn" v-if="scene == 'listAdd'">添加</view>
+        <view class="addition-btn" v-if="scene == 'listAdd'" @click="addCoupon">添加</view>
       </view>
       <!-- end coupon-info-card-header -->
       <!-- start coupon-info-card-value -->
@@ -70,6 +70,13 @@ export default {
       },
     },
   },
+  methods: {
+    // 添加优惠劵
+    addCoupon(){
+        console.log(111)
+        this.$emit('addCoupon');
+    }
+  }
 };
 </script>
 
