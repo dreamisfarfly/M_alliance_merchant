@@ -143,10 +143,6 @@ export default {
       box-sizing: border-box;
       display: flex;
       align-items: center;
-      .coupon-management-type-icon {
-        width: 122rpx;
-        height: 158rpx;
-      }
       .coupon-management-type-icons {
         width: 98rpx;
         height: 106rpx;
