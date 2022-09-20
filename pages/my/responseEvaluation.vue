@@ -1,9 +1,11 @@
 <template>
   <!-- start response-evaluation -->
   <view class="response-evaluation">
+    <!-- start response-evaluation-card -->
     <view class="response-evaluation-card">
       <!-- start comment-list -->
       <view class="comment-list">
+        <!-- start comment-list-header -->
         <view class="comment-list-header">
           <img class="user-buddha" src="" />
           <view class="comment-info">
@@ -14,6 +16,8 @@
             <score :evaluationScore="4" />
           </view>
         </view>
+        <!-- end comment-list-header -->
+        <!-- start comment-list-content -->
         <view class="comment-list-content">
           <view class="comment-content"
             >不好意思评价晚了，非常好的店家，东西很喜欢！买来这个是送人的她很喜欢卖家的贴心让我感到很温暖。</view
@@ -27,6 +31,8 @@
             />
           </view>
         </view>
+        <!-- end comment-list-content -->
+        <!-- start comment-list-footer -->
         <view class="comment-list-footer">
           <view class="comment-data-info">
             <view class="browse">
@@ -45,11 +51,13 @@
             </view>
           </view>
         </view>
+        <!-- end comment-list-footer -->
       </view>
       <!-- end comment-list -->
       <!-- start comment-details -->
       <view class="comment-details">
-        <view class="comment-details-list" v-for="(item,key) in 3" :key="key">
+        <!-- start comment-details-list -->
+        <view class="comment-details-list" v-for="(item, key) in 3" :key="key">
           <img src="" class="comment-details-list-img" />
           <view class="comment-details-list-info">
             <view class="justify-align">
@@ -78,9 +86,11 @@
             </view>
           </view>
         </view>
+        <!-- end comment-details-list -->
       </view>
       <!-- end comment-details -->
     </view>
+    <!-- end response-evaluation-card -->
   </view>
   <!-- end response-evaluation -->
 </template>
