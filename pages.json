@@ -199,6 +199,14 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/couponCancellation",
+			"style": {
+				"navigationBarTitleText": "优惠券核销",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
 		}
 	],
 	"globalStyle": {
