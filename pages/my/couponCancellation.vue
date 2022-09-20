@@ -46,7 +46,12 @@
     <view class="record">
       <view class="record-title">核销记录</view>
       <view class="record-content">
-        <CouponCancellationCard scene="record"></CouponCancellationCard>
+        <CouponCancellationCard
+          scene="record"
+          v-for="(item, key) in 6"
+          :key="key"
+          style="margin-bottom: 20rpx"
+        ></CouponCancellationCard>
       </view>
     </view>
     <!-- end record -->
