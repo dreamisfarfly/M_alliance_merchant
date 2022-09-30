@@ -284,7 +284,7 @@ export default {
           bottom: 0;
           left: 0;
           right: 0;
-          width: 160rpx;
+          width: 100%;
           height: 42rpx;
           background: #ffdaad;
           border-radius: 0 0 18rpx 18rpx;
@@ -302,7 +302,7 @@ export default {
       height: 80rpx;
       background: #494745;
       box-shadow: 0 6rpx 16rpx 0 rgba(17, 15, 13, 0.39);
-      border-radius: 16px;
+      border-radius: 16rpx;
       border: 2rpx solid rgba(255, 218, 173, 1);
       text-align: center;
       line-height: 80rpx;
