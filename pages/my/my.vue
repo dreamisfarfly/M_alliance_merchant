@@ -321,8 +321,9 @@ export default {
           font-size: 24rpx;
           font-weight: 500;
           color: #c78125;
-          text-align: center;
-          line-height: 50rpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .to-withdrawal {
           margin-left: 20rpx;
@@ -334,8 +335,9 @@ export default {
           font-size: 24rpx;
           font-weight: 500;
           color: #ffffff;
-          text-align: center;
-          line-height: 50rpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
     }

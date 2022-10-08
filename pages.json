@@ -229,6 +229,17 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/my/scanQrCodes",
+			"style": {
+				"navigationBarTitleText": "扫码",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {

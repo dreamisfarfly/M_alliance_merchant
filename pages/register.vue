@@ -198,8 +198,9 @@ export default {
         font-weight: 500;
         color: #ffdaad;
         letter-spacing: 2rpx;
-        text-align: center;
-        line-height: 54rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -291,8 +292,9 @@ export default {
           font-size: 22rpx;
           font-weight: 600;
           color: #333333;
-          text-align: center;
-          line-height: 42rpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
     }
