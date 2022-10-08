@@ -44,7 +44,9 @@
           >实际收款：<text style="color: #c78125">588.00</text>元</view
         >
       </view>
-      <view style="margin-top: 16rpx" class="special-offers-info"
+      <view
+        style="margin-top: 16rpx; padding-left: 8rpx"
+        class="special-offers-info"
         >2022年9月2日17:19:47</view
       >
     </view>
@@ -89,7 +91,7 @@ export default {
   }
   .texpense-calendar-card-info {
     flex: 1;
-    padding: 30rpx 20rpx 22rpx 28rpx;
+    padding: 50rpx 14rpx 28rpx 28rpx;
     box-sizing: border-box;
     .card-info {
       border-bottom: 2rpx dashed #e3e3e3;
@@ -98,10 +100,12 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .user-name {
           font-size: 28rpx;
           font-weight: 500;
           color: #000000;
+          padding-left: 8rpx;
         }
         .card-group {
           display: flex;
@@ -125,6 +129,7 @@ export default {
         }
       }
       .card-phone {
+        padding-left: 8rpx;
         margin-top: 10rpx;
         font-size: 28rpx;
         font-weight: 400;
@@ -135,6 +140,7 @@ export default {
       margin-top: 20rpx;
       display: flex;
       justify-content: space-between;
+      padding-left: 8rpx;
     }
     .special-offers-info {
       font-size: 24rpx;
