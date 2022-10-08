@@ -90,10 +90,12 @@ export default {
   .coupon-type-card {
     width: 152rpx;
     height: 100%;
-    padding-left: 30rpx;
+    padding-left: 16rpx;
+    padding-bottom: 24rpx;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     .coupon-type-icon {
       width: 122rpx;
       height: 158rpx;

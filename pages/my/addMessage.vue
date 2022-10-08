@@ -98,6 +98,8 @@ export default {
   padding: 36rpx 0;
   border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
   .column-list-label {
+    display: flex;
+    align-items: center;
     width: 60rpx;
     font-size: 24rpx;
     font-weight: 400;

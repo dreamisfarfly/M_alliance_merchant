@@ -74,6 +74,9 @@ export default {
       padding: 36rpx 0;
       border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
       .column-list-name {
+        width: 120rpx;
+        display: flex;
+        align-items: center;
         font-size: 24rpx;
         font-weight: 400;
         color: #999999;
