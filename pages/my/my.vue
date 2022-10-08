@@ -324,6 +324,7 @@ export default {
           display: flex;
           align-items: center;
           justify-content: center;
+		      box-sizing: border-box;
         }
         .to-withdrawal {
           margin-left: 20rpx;
@@ -338,6 +339,7 @@ export default {
           display: flex;
           align-items: center;
           justify-content: center;
+		  box-sizing: border-box;
         }
       }
     }

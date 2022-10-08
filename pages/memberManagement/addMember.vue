@@ -58,6 +58,7 @@ export default {
     border-radius: 16rpx;
     padding: 0 50rpx;
     padding-bottom: 40rpx;
+    box-sizing: border-box;
   }
 }
 
@@ -91,6 +92,8 @@ export default {
   border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
   .column-list-label {
     width: 202rpx;
+    display: flex;
+    align-items: center;
     .required {
       margin-right: 14rpx;
       font-size: 24rpx;
@@ -100,6 +103,7 @@ export default {
   }
   .column-list-content {
     flex: 1;
+    height: 100%;
     .column-list-val {
       font-size: 28rpx;
       font-weight: 500;

@@ -62,9 +62,10 @@ export default {
         width: 92rpx;
         height: 42rpx;
         border-radius: 8rpx;
-        text-align: center;
-        line-height: 42rpx;
         font-size: 20rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .already-recorded {
         border: 2rpx solid #60b251;

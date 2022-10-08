@@ -24,8 +24,7 @@
       <!-- end 搜索 -->
       <!-- start member-coun-info -->
       <view class="member-coun-info">
-        已添加会员：<text style="color: #c78125">55</text>/1000
-        {{ searchValue }}</view
+        已添加会员：<text style="color: #c78125">55</text>/1000</view
       >
       <!-- end member-coun-info -->
       <!-- start member-content -->
@@ -155,8 +154,9 @@ export default {
             font-size: 16rpx;
             font-weight: 500;
             color: #60b251;
-            text-align: center;
-            line-height: 30rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         }
         .member-info {

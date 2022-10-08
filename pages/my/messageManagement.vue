@@ -106,8 +106,9 @@ export default {
       font-size: 20rpx;
       font-weight: 500;
       color: #ff7265;
-      text-align: center;
-      line-height: 42rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
