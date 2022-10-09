@@ -188,6 +188,7 @@ export default {
             font-size: 32rpx;
             font-weight: 500;
             color: #ffffff;
+            line-height: 44rpx;
           }
           .shopkeeper-icon {
             margin-left: 20rpx;
@@ -200,6 +201,7 @@ export default {
           font-size: 24rpx;
           font-weight: 400;
           color: #ffffff;
+          line-height: 34rpx;
         }
       }
     }
@@ -215,7 +217,7 @@ export default {
     background: rgba(#ffffff, 0.2);
     border-radius: 16rpx;
     .data-info-operation {
-      padding: 16rpx 30rpx 12rpx 30rpx;
+      padding: 16rpx 30rpx 0rpx 30rpx;
       box-sizing: border-box;
       display: flex;
       justify-content: space-between;
@@ -226,6 +228,8 @@ export default {
       }
       .to-perfect {
         font-weight: 500;
+        display: flex;
+        align-items: center;
       }
     }
   }
@@ -253,7 +257,7 @@ export default {
 
 .my-content {
   position: relative;
-  top: -80rpx;
+  top: -100rpx;
   width: 100%;
   padding: 0 30rpx;
   box-sizing: border-box;
@@ -308,6 +312,7 @@ export default {
           font-size: 20rpx;
           font-weight: 500;
           color: #999999;
+          line-height: 34rpx;
         }
       }
       .commission-operation {

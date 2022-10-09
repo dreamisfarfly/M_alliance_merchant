@@ -89,12 +89,14 @@ export default {
           font-size: 28rpx;
           font-weight: 500;
           color: #333333;
+          line-height: 40rpx;
         }
         .message-info-time {
           margin-top: 12rpx;
           font-size: 24rpx;
           font-weight: 400;
           color: #999999;
+          line-height: 34rpx;
         }
       }
     }
