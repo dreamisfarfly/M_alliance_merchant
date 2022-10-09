@@ -12,11 +12,15 @@
             <view class="commission-info-title"
               >店长佣金比：<text class="commission-data">70%</text></view
             >
-            <view class="commission-info-title"
+            <view class="commission-info-title" style="margin-top:14rpx;"
               >店员佣金比：<text class="commission-data">30%</text></view
             >
           </view>
-          <view class="commission-amend" @click="jump('/pages/my/memberRecommendationCommission')">修改 ></view>
+          <view
+            class="commission-amend"
+            @click="jump('/pages/my/memberRecommendationCommission')"
+            >修改 ></view
+          >
         </view>
       </view>
     </view>
@@ -42,7 +46,10 @@
               :key="key"
             >
               <view class="employee-list-info">
-                <img src="/static/images/compile-icon.png" class="employee-list-info-compile" />
+                <img
+                  src="/static/images/compile-icon.png"
+                  class="employee-list-info-compile"
+                />
                 <view class="employee-info">
                   <view class="employee-info-name">
                     {{ item.name }}
@@ -118,9 +125,9 @@ export default {
     // 跳转
     jump(path) {
       uni.navigateTo({
-      	url: path
-      })
-    }
+        url: path,
+      });
+    },
   },
 };
 </script>
@@ -134,7 +141,7 @@ export default {
       justify-content: space-between;
       .clerk-management-column-title {
         font-size: 28rpx;
-        font-weight: 500;
+        font-weight: 600;
         color: #333333;
       }
       .clerk-management-column-subhead {
@@ -160,6 +167,7 @@ export default {
             font-size: 28rpx;
             font-weight: 400;
             color: #333333;
+            line-height: 40rpx;
             .commission-data {
               color: #c78125;
             }
@@ -204,6 +212,7 @@ export default {
                   color: #333333;
                   display: flex;
                   align-items: center;
+                  line-height: 40rpx;
                   .employee-identity-icon {
                     margin-left: 14rpx;
                     width: 60rpx;
@@ -215,6 +224,7 @@ export default {
                   font-size: 24rpx;
                   font-weight: 400;
                   color: #999999;
+                  line-height: 34rpx;
                 }
               }
             }

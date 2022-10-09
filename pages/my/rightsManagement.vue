@@ -153,14 +153,16 @@ export default {
   width: 100%;
   background: #f5f5f5;
   border-radius: 16rpx;
-  padding: 8rpx 10rpx;
+  padding: 8rpx 12rpx;
   box-sizing: border-box;
 }
 
 .general-textarea {
+  width: 100%;
   font-size: 24rpx;
   font-weight: 400;
   color: #333333;
+  line-height: 44rpx;
 }
 
 .confirm-btn {
