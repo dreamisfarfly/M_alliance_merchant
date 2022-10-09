@@ -68,7 +68,7 @@
                   <view class="user-name">王丽丽</view>
                   <view class="user-time">2020-08-08</view>
                 </view>
-                <score :evaluationScore="4" />
+                <score style="margin-top: 6rpx;" :evaluationScore="4" />
               </view>
             </view>
             <view class="comment-list-content">
@@ -196,11 +196,6 @@ export default {
         margin-left: 12rpx;
         .score-detail {
           display: flex;
-          .star-icon {
-            width: 24rpx;
-            height: 24rpx;
-            margin-right: 2rpx;
-          }
         }
         .score-detail-info-title {
           margin-top: 8rpx;
@@ -272,10 +267,12 @@ export default {
             .user-comment-info {
               display: flex;
               justify-content: space-between;
+              align-items: center;
               .user-name {
                 font-size: 28rpx;
                 font-weight: 500;
                 color: #333333;
+                line-height: 40rpx;
               }
               .user-time {
                 font-size: 20rpx;

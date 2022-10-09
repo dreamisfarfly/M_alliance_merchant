@@ -13,7 +13,7 @@
               <view class="user-name">王丽丽</view>
               <view class="user-time">2020-08-08</view>
             </view>
-            <score :evaluationScore="4" />
+            <score style="margin-top: 6rpx;" :evaluationScore="4" />
           </view>
         </view>
         <!-- end comment-list-header -->
@@ -79,7 +79,7 @@
                 </view>
               </view>
             </view>
-            <view class="user-time" style="margin-top: 4rpx">2020-08-08</view>
+            <view class="user-time" style="margin-top: 4rpx;line-height: 14px;">2020-08-08</view>
             <view class="comment-content" style="margin-top: 14rpx">
               不好意思评价晚了，非常好的店家，东西很喜欢！
               买来这个是送人的她很喜欢卖家的贴心让我感到 很温暖。
@@ -106,8 +106,7 @@ export default {
 
 <style lang="less" scoped>
 .response-evaluation {
-  padding: 0 30rpx;
-  padding-top: 20rpx;
+  padding: 20rpx 30rpx;
   .response-evaluation-card {
     background: #ffffff;
     box-shadow: 0 8rpx 16px 0 rgba(108, 119, 128, 0.05);
@@ -166,6 +165,7 @@ export default {
   font-size: 28rpx;
   font-weight: 500;
   color: #333333;
+  line-height: 40rpx;
 }
 .user-time {
   font-size: 20rpx;

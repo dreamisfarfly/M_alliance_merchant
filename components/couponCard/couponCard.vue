@@ -107,10 +107,10 @@ export default {
   }
   .coupon-info-card {
     flex: 1;
-    padding: 6rpx 46rpx 18rpx 16rpx;
+    padding: 6rpx 42rpx 18rpx 22rpx;
     box-sizing: border-box;
     .coupon-info-card-header {
-      padding-top: 24rpx;
+      padding-top: 32rpx;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -125,12 +125,13 @@ export default {
         height: 50rpx;
         border-radius: 8rpx;
         border: 2rpx solid #c78125;
-        text-align: center;
-        line-height: 50rpx;
         box-sizing: border-box;
         font-size: 24rpx;
         font-weight: 500;
         color: #c78125;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -139,6 +140,7 @@ export default {
     font-size: 24rpx;
     font-weight: 400;
     color: #999999;
+    line-height: 34rpx;
   }
   .coupon-info-card-separator {
     margin-top: 22rpx;
@@ -153,6 +155,7 @@ export default {
     color: #999999;
     display: flex;
     justify-content: space-between;
+    line-height: 28rpx;
   }
 }
 
