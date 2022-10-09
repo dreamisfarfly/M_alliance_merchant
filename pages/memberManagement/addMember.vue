@@ -82,6 +82,7 @@ export default {
   font-weight: 400;
   color: #999999;
   text-align: center;
+  line-height: 34rpx;
 }
 
 .column-list {
