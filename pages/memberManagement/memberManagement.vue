@@ -113,6 +113,7 @@ export default {
   font-size: 28rpx;
   font-weight: 500;
   color: #333333;
+  line-height: 40rpx;
 }
 .member-content {
   padding-bottom: 30rpx;
@@ -144,11 +145,11 @@ export default {
             font-size: 28rpx;
             font-weight: 500;
             color: #333333;
+            line-height: 40rpx;
           }
           .member-status {
             margin-left: 16rpx;
-            width: 64rpx;
-            height: 30rpx;
+            padding: 4rpx 16rpx;
             border-radius: 8rpx;
             border: 2rpx solid #60b251;
             font-size: 16rpx;
@@ -178,12 +179,14 @@ export default {
         font-size: 24rpx;
         font-weight: 400;
         color: #999999;
+        line-height: 34rpx;
       }
       .member-list-info-limited {
         margin-top: 8rpx;
         font-size: 20rpx;
         font-weight: 400;
         color: #999999;
+        line-height: 28rpx;
       }
     }
   }
