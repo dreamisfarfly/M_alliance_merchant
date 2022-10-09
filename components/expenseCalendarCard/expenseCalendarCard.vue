@@ -44,9 +44,7 @@
           >实际收款：<text style="color: #c78125">588.00</text>元</view
         >
       </view>
-      <view
-        style="margin-top: 16rpx; padding-left: 8rpx"
-        class="special-offers-info"
+      <view class="special-offers-info special-offers-info-at"
         >2022年9月2日17:19:47</view
       >
     </view>
@@ -134,6 +132,7 @@ export default {
         font-size: 28rpx;
         font-weight: 400;
         color: #000000;
+        line-height: 40rpx;
       }
     }
     .special-offers {
@@ -141,11 +140,17 @@ export default {
       display: flex;
       justify-content: space-between;
       padding-left: 8rpx;
+      line-height: 34rpx;
     }
     .special-offers-info {
       font-size: 24rpx;
       font-weight: 400;
       color: #999999;
+    }
+    .special-offers-info-at {
+      margin-top: 16rpx;
+      padding-left: 8rpx;
+      line-height: 34rpx;
     }
   }
 }

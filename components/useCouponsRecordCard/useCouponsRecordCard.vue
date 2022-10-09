@@ -80,20 +80,23 @@ export default {
       font-size: 20rpx;
       font-weight: 500;
       color: #999999;
+      line-height: 28rpx;
     }
   }
   .use-coupons-record-card-info {
     flex: 1;
-    padding: 30rpx 20rpx 22rpx 28rpx;
+    padding: 32rpx 38rpx 20rpx 28rpx;
     box-sizing: border-box;
     .user-info {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .user-name {
         font-size: 28rpx;
         font-weight: 500;
         color: #000000;
+        line-height: 40rpx;
       }
       .card-group {
         display: flex;
@@ -121,12 +124,14 @@ export default {
       font-size: 28rpx;
       font-weight: 400;
       color: #000000;
+      line-height: 40rpx;
     }
     .market {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-top: 32rpx;
+      line-height: 34rpx;
       .market-name {
         font-size: 24rpx;
         font-weight: 400;
