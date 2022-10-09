@@ -135,6 +135,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 0 30rpx;
+  padding-bottom: 18rpx;
   box-sizing: border-box;
   .member-name {
     padding-top: 106rpx;
@@ -166,18 +167,21 @@ export default {
       font-family: AlimamaShuHeiTi;
       font-size: 36rpx;
       color: #ffc98e;
+      text-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.5);
+      background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
       letter-spacing: 4rpx;
     }
     .separator {
       margin-top: 14rpx;
       width: 396rpx;
       height: 2rpx;
-      border: 2rpx solid rgba(253, 233, 205, 0.3);
+      background: rgba(253, 233, 205, 0.3);
     }
     .equity-subheading {
       margin-top: 10rpx;
       font-size: 8rpx;
-      font-family: Alimama ShuHeiTi;
       color: #ffc98e;
       letter-spacing: 2px;
     }
@@ -222,21 +226,27 @@ export default {
       .member-vessel-title {
         font-size: 28rpx;
         color: #ffc98e;
+        text-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.5);
+        background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         text-align: left;
       }
     }
     .required-info-conent {
-      margin-top: 50rpx;
+      margin-top: 20rpx;
       .required-info-list {
         display: flex;
         padding: 28rpx 0;
         box-sizing: border-box;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
         .required-info-list-name {
           font-size: 24rpx;
           font-weight: 400;
           color: #999999;
           width: 154rpx;
+          display: flex;
+          align-items: center;
         }
         .required-info-list-input {
           font-size: 28rpx;
@@ -269,13 +279,13 @@ export default {
           background-size: 100% 100%;
         }
         .combo-list-title {
-          margin-top: 10rpx;
+          margin-top: 20rpx;
           font-size: 22rpx;
           font-weight: 400;
           color: #ffffff;
         }
         .combo-list-price {
-          margin-top: 6rpx;
+          margin-top: 12rpx;
           font-size: 38rpx;
           font-weight: 400;
           color: #ebc398;
