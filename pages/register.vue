@@ -89,7 +89,9 @@
         </view>
       </view>
       <!-- end 付费信息 -->
-      <view class="payment-btn">立即支付</view>
+      <view class="payment-btn">
+        <text class="payment-btn-font">立即支付</text>
+      </view>
       <view class="activation-code">输入激活码></view>
     </view>
     <!-- end member-vessel -->
@@ -283,12 +285,14 @@ export default {
           font-size: 22rpx;
           font-weight: 400;
           color: #ffffff;
+          text-align: center;
         }
         .combo-list-price {
           margin-top: 12rpx;
           font-size: 38rpx;
           font-weight: 400;
           color: #ebc398;
+          text-align: center;
         }
         .combo-list-time {
           position: absolute;
@@ -318,12 +322,24 @@ export default {
       border: 2rpx solid rgba(255, 218, 173, 1);
       text-align: center;
       line-height: 80rpx;
-      font-size: 32rpx;
-      font-weight: 600;
-      color: #ffc98e;
+
+      .payment-btn-font {
+        font-size: 32rpx;
+        font-weight: 600;
+        color: #ffc98e;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
     .activation-code {
       margin-top: 36rpx;
+      font-weight: 600;
+      text-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.5);
+      background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size: 24rpx;
       color: #ffc98e;
     }
