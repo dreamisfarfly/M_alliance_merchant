@@ -13,15 +13,17 @@
       <!-- start column-hint -->
       <view class="column-hint">平台使用规则：必须到店消费</view>
       <!-- end column-hint -->
-      <!-- start shop-card -->
-      <view class="shop-card">
-        <view class="shop-card-name">门店使用规则</view>
-        <view class="shop-card-textarea">
-          <textarea placeholder="请输入门店使用规则"></textarea>
-          <view class="textarea-count">28/100</view>
+      <view style="padding: 0 16rpx">
+        <!-- start shop-card -->
+        <view class="shop-card">
+          <view class="shop-card-name">门店使用规则</view>
+          <view class="shop-card-textarea">
+            <textarea placeholder="请输入门店使用规则"></textarea>
+            <view class="textarea-count">28/100</view>
+          </view>
         </view>
+        <!-- end shop-card -->
       </view>
-      <!-- end shop-card -->
     </view>
     <!-- end add-coupon -->
     <!-- start operation -->
@@ -54,10 +56,11 @@ export default {
 
 <style lang="less" scoped>
 .add-coupon {
-  padding: 0 30rpx;
+  padding: 0 14rpx;
   .column {
     .column-name {
       padding: 30rpx 0;
+      padding-left: 16rpx;
       font-size: 28rpx;
       font-weight: 600;
       color: #333333;
@@ -65,6 +68,7 @@ export default {
   }
   .column-hint {
     padding: 30rpx 0;
+    padding-left: 16rpx;
     font-size: 24rpx;
     font-weight: 400;
     color: #333333;
@@ -82,16 +86,21 @@ export default {
     }
     .shop-card-textarea {
       margin-top: 36rpx;
-      width: 590rpx;
+      width: 100%;
       height: 190rpx;
       background: #f5f5f5;
       border-radius: 16rpx;
-      padding: 8rpx 10rpx;
+      padding: 8rpx 12rpx;
       box-sizing: border-box;
-      font-size: 24rpx;
-      font-weight: 400;
-      color: #333333;
       position: relative;
+      textarea {
+        width: 100%;
+        height: 140rpx;
+        font-size: 24rpx;
+        font-weight: 400;
+        color: #333333;
+        line-height: 48rpx;
+      }
       .textarea-count {
         position: absolute;
         right: 28rpx;
