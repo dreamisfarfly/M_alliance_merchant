@@ -93,8 +93,6 @@ export default {
         query.select(".referral-code").boundingClientRect();
         query.exec((res) => {
           that.swiperHeight = resu.windowHeight - res[0].top + "px"; //屏幕的高度减去当前swiper距离顶部的高度就是剩余屏幕的高度 然后动态赋值给swiper
-          console.log("页面的剩余高度", res[0].top);
-          console.log(res)
         });
       },
       fail: (res) => {},
